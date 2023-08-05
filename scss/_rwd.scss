@@ -15,18 +15,18 @@
     
 }
 
-// @media only screen and (max-width: 630px) {
-//     #skillHead, #traitHead, 
-//     #expHead, #workHead,
-//     #contactHead {
-//         font-size: 22px;
-//         font-weight: 600;
-//         text-align: center;
-//         width: 400px;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
+@media only screen and (max-width: 450px) {
+    #skillHead, #traitHead, 
+    #expHead, #workHead,
+    #contactHead {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
-// }
+}
 
 // 區塊標題標籤的RWD統整<<
