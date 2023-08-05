@@ -12099,7 +12099,7 @@ body > div {
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    width: 400px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -12111,7 +12111,7 @@ body > div {
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    width: 300px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
