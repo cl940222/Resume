@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+// background colors
+$body-color: #E3E2DE;
+$div-background-blue: #94CDD3;
+$div-background-blue-80: rgba(148, 205, 211, 0.8);
+$div-background-green: #719F96;
+$div-background-green-80: rgba(113, 159, 150, 0.80);
+$div-background-orange: #F2B07B;
+$div-background-orange-80: rgba(242, 177, 123, 0.8);
+$div-background-creme: #F3F2DA;
+$div-background-creme-80: rgba(243, 242, 218, 0.8);
+$div-background-white: #FFFFFF;
+$div-background-white-80: rgba(255, 255, 255, 0.8);
+
+// text colors
+$text-header: #2B665B;
+$text-subHeader: #719F96;
+$text-paragraph: #2B665B;
+ 
+
+$link-color: #855252;
+$font-l: 18px;
+$font-m: $font-l - 3px;
+$font-family-title: "Raleway";
+$font-family-text: "Raleway";

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/all.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/all.js"></script>
+</head>
+
+<body>
+    <!-- sideBar -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#main">About Me</a>
+        <a href="#secSkills">Skills</a>
+        <a href="#secTraits">Personality Traits</a>
+        <a href="#secExp">Experience</a>
+        <a href="#secWork">Work</a>
+        <a href="#secContact">Contact</a>
+    </div>
+
+    <div id="sideBarIcon">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <!-- <h2>Collapsed Sidebar</h2>
+    <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p> -->
+    </div>
+
+
+    <!-- 個人首頁簡介 -->
+
+    <div id="main" class="container-md main">
+        <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col main-left ">
+                <div>
+                    <p>Camilla Lee</p>
+                    <p>李筱逵</p>
+                    <h4>Front-end Engineer</h4>
+                    <span>本就讀商業類別科系，學生時期選修即對網頁相關課程深感興趣而開始研究，透過網頁課程自學並參與前端工程師培訓課程強健功力，目前待業中。</span>
+                </div>
+
+            </div>
+            <div class="col main-right ">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 技能 -->
+
+    <div id="secSkills" class="container-md">
+        <div id="skillHead">技能 Skills </div>
+        <div id="skillsImg"></div>
+        <div class="row row-cols-1 row-cols-sm-3 ">
+            <div class="col skillCard">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-card-heading" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path
+                            d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
+                </p>
+                <p>網頁切版</p>
+                <ul id="skillText">
+                    <li>熟悉運用HTML5、CSS 將 UI設計稿轉換為網頁排版樣式</li>
+                    <li>熟悉Sass、Bootsrap、Pure CSS 等CSS 套件與框架</li>
+                </ul>
+            </div>
+            <div class="col skillCard">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-card-heading" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path
+                            d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
+                </p>
+                <p>網頁切版</p>
+                <ul id="skillText">
+                    <li>熟悉運用HTML5、CSS 將 UI設計稿轉換為網頁排版樣式</li>
+                    <li>熟悉Sass、Bootsrap、Pure CSS 等CSS 套件與框架</li>
+                </ul>
+            </div>
+            <div class="col skillCard">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-card-heading" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path
+                            d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z" />
+                    </svg>
+                </p>
+                <p>網頁切版</p>
+                <ul id="skillText">
+                    <li>熟悉運用HTML5、CSS 將 UI設計稿轉換為網頁排版樣式</li>
+                    <li>熟悉Sass、Bootsrap、Pure CSS 等CSS 套件與框架</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 個人特質 -->
+
+    <div id="secTraits" class="container-md">
+        <div id="traitHead">個人特質 Personality Traits </div>
+        <div id="traitCards" class="row row-cols-2 row-cols-lg-4">
+            <div class="col traitCard">
+                <span>特質1</span>
+                <p>我這個特質讓我工作上有什麼樣的效率</p>
+            </div>
+            <div class="col traitCard">
+                <!-- img1 -->
+            </div>
+            <div class="col traitCard">
+                <span>特質1</span>
+                <p>我這個特質讓我工作上有什麼樣的效率</p>
+            </div>
+            <div class="col traitCard">
+                <!-- img2 -->
+            </div>
+            <div class="col traitCard">
+                <!-- img3 -->
+            </div>
+            <div class="col traitCard">
+                <span>特質1</span>
+                <p>我這個特質讓我工作上有什麼樣的效率</p>
+            </div>
+            <div class="col traitCard">
+                <!-- img4 -->
+            </div>
+            <div class="col traitCard">
+                <span>特質1</span>
+                <p>我這個特質讓我工作上有什麼樣的效率</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 經驗 -->
+    <div id="secExp" class="container-md">
+        <div id="expHead">經歷 Experiences </div>
+        <div id="expCards">
+            <div id="exp1">
+                <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/>
+                  </svg> 國立臺中科技大學</h3>
+                <h4>國際貿易暨流通管理系 學士</h4>
+                <h5>2011-2017</h5>
+                <p>因興趣選修網頁設計相關課程因而對網頁編碼產生興趣。</p>
+            </div>
+            <div id="exp2">
+                <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/>
+                  </svg> 富譽國際科技有限公司</h3>
+                <h4>行政專員</h4>
+                <h5>2017-2023</h5>
+                <p>畢業後加入前公司協助公司處理行政上以及公司軟體後台的維護與困難排除相關工作，公司有活動須向客戶公告的時候會用簡易標籤語言進行網頁的撰寫。</p>
+            </div>
+            <div id="exp3">
+                <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/>
+                  </svg> Hexschool、Hahow、SAT.Knowledge</h3>
+                <h4>利用網路學習資源自修網頁撰寫相關課程</h4>
+                <h5>2022-2023</h5>
+                <p></p>
+            </div>
+            <div id="exp4">
+                <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/>
+                  </svg> 資產國際</h3>
+                <h4>前端工程師培訓計畫 學員</h4>
+                <h5>2023</h5>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+..
+
+    <!-- 作品 -->
+    <div id="secWork" class="container-lg">
+        <div id="workHead">作品 Works</div>
+        <div class="row row-cols-1 row-cols-sm-2 ">
+            <div class="col workCard">
+                <div class="workImg">
+                    <!-- 圖片 -->
+                </div>
+                <h4>個人履歷網站</h4>
+                <p>
+                    個人履歷網站，使用SASS撰寫樣式並使用jQuery完成互動效果。
+                </p>
+                <h4>使用工具</h4>
+                <div id="tools" class="row-cols-1">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="col workCard">
+                <div class="workImg">
+                    <!-- 圖片 -->
+                </div>
+                <h4>英文學習網站</h4>
+                <p>
+                    前端工程師初期的小磚作品，利用剛學起的基本功力去撰寫一個網站。
+                </p>
+                <h4>使用工具</h4>
+                <div id="tools" class="row-cols-1">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="col workCard">
+                <div class="workImg">
+                    <!-- 圖片 -->
+                </div>
+                <h4>BMI計算器</h4>
+                <p>
+                    個人學習時的產物，利用剛學起的基本功力去撰寫一個網站。
+                </p>
+                <h4>使用工具</h4>
+                <div id="tools" class="row-cols-1">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 聯絡我 -->
+    <div id="secContact" class="container-lg">
+        <div id="contactHead">聯絡我 Contact Me</div>
+    </div>
+</body>
+
+</html>

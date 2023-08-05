@@ -1,0 +1,174 @@
+#workHead {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: $text-header;
+    background-color: $div-background-orange;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 100px;
+    margin: 20px auto 50px auto;
+}
+
+#secWork {
+    // border: solid 1px black;
+    margin: auto;
+    padding: 20px 20px 50px 20px;
+}
+
+.workCard {
+    margin: 10px auto;
+    width: 30%;
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: $text-header;
+        margin: 15px auto 0 auto;
+        width: fit-content;
+        border-bottom: 3px dashed $div-background-orange;
+    }
+    p {
+        text-align: left;
+        text-indent: 10px;
+        padding: 10px 10px 0px 10px;
+    }
+}
+
+#tools {
+    height: 100px;
+    border-radius: 10px;
+    // border: 2px dashed $div-background-orange;
+    div {
+        // border: 1px solid green;
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        margin: 10px;
+        &:nth-child(1){
+            background-image: url(../media/logo.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &:nth-child(2){
+            background-image: url(../media/bootstrap.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.workCard:nth-of-type(1) {
+    background-color: $div-background-creme;
+    border-radius: 10px;
+    text-align: center;
+    .workImg {
+        background-image: url(../media/work_001.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin: 15px auto;
+        height: 250px;
+        // border: 2px dashed $div-background-orange;
+        border-radius: 5px;
+    }
+    
+}
+
+.workCard:nth-child(2) {
+    background-color: $div-background-blue;
+    border-radius: 10px;
+    text-align: center;
+    .workImg {
+        background-image: url(../media/work_002.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin: 15px auto;
+        height: 250px;
+        // border: 2px dashed $div-background-orange;
+        border-radius: 5px;
+    }
+    
+}
+
+.workCard:nth-child(3) {
+    background-color: $div-background-orange;
+    border-radius: 10px;
+    text-align: center;
+    .workImg {
+        background-image: url(../media/work_002.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin: 15px auto;
+        height: 250px;
+        // border: 2px dashed $div-background-orange;
+        border-radius: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .workCard {
+        margin: 40px;
+        width: 40%;
+    }
+
+    .workImg {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .workCard {
+        margin: 40px;
+        width: 40%;
+    }
+
+    .workImg {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 836px) {
+
+    .workCard {
+        margin: 10px auto;
+        width: 40%;
+    }
+
+    .workImg {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .workCard {
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .workImg {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .workCard {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .workImg {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .workCard {
+        margin: 20px;
+        width: 90%;
+    }
+}

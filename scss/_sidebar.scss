@@ -1,0 +1,54 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $div-background-orange;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+
+    a {
+        // margin: auto;
+        padding: 8px 10px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: rgb(241, 241, 241);
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $div-background-blue;
+    color: $text-header;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: $div-background-orange;
+    }
+  }
+
+  #sideBarIcon {
+    transition: margin-left .5s;
+    padding: 16px;
+  }

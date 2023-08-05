@@ -1,0 +1,80 @@
+#expHead {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: $text-header;
+    background-color: $div-background-orange;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px 100px;
+    margin: 20px auto 80px auto;
+}
+
+#secExp {
+    // border: solid 1px black;
+    margin: auto;
+    padding: 100px;
+    #expCards {
+        div {
+            background-color: $div-background-blue;
+            // border: 5px solid $div-background-green;
+            box-sizing: border-box;
+            border-radius: 20px;
+            padding: 15px 100px;
+            margin: 20px;
+            color: black;
+            &:nth-of-type(2) {
+                background-color: $div-background-creme;
+            }
+            &:nth-of-type(3) {
+                background-color: $div-background-orange;
+            }
+            &:nth-of-type(4) {
+                background-color: $div-background-green;
+            }
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            h4,h5 {
+                font-size: 18px;
+                font-weight: 400;
+                color: black;
+                text-indent: 50px;
+            }
+        }
+        
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    #secExp {
+        padding: 20px;
+        #expCards {
+            div {
+                padding: 30px 40px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 630px) {
+    #secExp {
+        padding: 10px;
+        #expCards {
+            div {
+                padding: 40px 20px;
+                h3 {
+                    font-size: 18px;
+                }
+                h4,h5 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,161 @@
+body {
+    background-color: $body-color;
+    width: 100%;
+    font-family: $font-family-title;
+}
+
+body>div {
+    margin: 0px auto;
+}
+
+.main {
+    margin: 80px auto;
+    background-color: $div-background-blue;
+    border-radius: 10px;
+    padding: 10px;
+
+    // max-height: 100px;
+    .main-left,
+    .main-right {
+        // border: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+
+        div {
+            height: 450px;
+            background-color: $div-background-creme;
+            border-radius: 5px;
+        }
+    }
+
+    .main-left {
+        div {
+            margin-left: 10px;
+            padding: 220px 50px 0 50px;
+
+            p {
+                display: inline-block;
+                // border: 1px solid green;
+                font-size: 32px;
+                font-weight: 600;
+                color: $text-header;
+                margin-bottom: 0;
+
+                &:nth-child(2) {
+                    margin-left: 50px;
+                }
+            }
+
+            h4 {
+                font-size: 20px;
+                color: $text-subHeader;
+                // border: 1px solid red;
+                margin-top: 0;
+
+            }
+
+            span {
+                color: $text-paragraph;
+            }
+        }
+    }
+
+    .main-right {
+        div {
+            margin-right: 10px;
+            background-image: url(../media/profile-pic.jpg);
+            background-size: cover;
+            background-position: right bottom;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .main {
+        padding: 5px;
+
+        .main-left {
+            div {
+                padding: 180px 30px 0 30px;
+
+                p {
+                    font-size: 24px;
+
+                    &:nth-child(2) {
+                        margin-left: 10px;
+                    }
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .main {
+        .main-left {
+            div {
+                padding: 160px 20px 0 20px;
+
+                p {
+                    font-size: 22px;
+                }
+
+                h4 {
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .main {
+
+        .main-left,
+        .main-right {
+            padding: 10px;
+            margin: auto;
+
+            div {
+                height: 250px;
+            }
+        }
+
+        .main-left {
+            div {
+                padding: 100px 20px 0 20px;
+                margin: auto;
+
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .main-right {
+            div {
+                margin: auto;
+            }
+        }
+    }
+
+}

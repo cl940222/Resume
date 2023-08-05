@@ -1,0 +1,24 @@
+// 1. 先放變數與reset
+@import "normalize";
+@import "bootstrap";
+@import "variable";
+
+// 2. 基本樣式+自定義常用樣式集合
+@import "base";
+@import "mixin";
+
+// 3. 網頁布局
+@import "layout";
+
+// 4. 再放自己的css樣式
+@import "main";
+@import "sidebar";
+@import "skills";
+@import "traits";
+@import "experiences";
+@import "works";
+@import "contact";
+@import "rwd";
+
+// 3. 匯入外部的css樣式
+// @import "lightbox"; 
