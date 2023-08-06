@@ -11455,12 +11455,33 @@ body {
   font-family: "Raleway";
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: 0.5px solid #E3E2DE;
+  outline: none;
+  background-color: #719F96;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 60px;
+}
+
+#myBtn:hover {
+  background-color: #F2B07B;
+  color: #719F96;
+}
+
 body > div {
   margin: 0px auto;
 }
 
 .main {
-  margin: 80px auto;
+  margin: 0 auto 80px auto;
   background-color: #94CDD3;
   border-radius: 10px;
   padding: 10px;
@@ -11793,24 +11814,28 @@ body > div {
 }
 .traitCard:nth-of-type(2) {
   background-image: url(../media/traits_001.png);
+  background-color: #E3E2DE;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .traitCard:nth-of-type(4) {
   background-image: url(../media/traits_002.png);
+  background-color: #E3E2DE;
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 150%;
 }
 .traitCard:nth-of-type(5) {
   background-image: url(../media/traits_003.png);
+  background-color: #E3E2DE;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150%;
 }
 .traitCard:nth-of-type(7) {
   background-image: url(../media/traits_004.png);
+  background-color: #E3E2DE;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 180%;
@@ -12083,19 +12108,116 @@ body > div {
   border-radius: 10px;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px 100px;
-  margin: 20px auto 50px auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 0 auto 50px auto;
 }
 
-#secContact {
+.contact {
+  margin: 80px auto;
+  background-color: #F3F2DA;
+  border-radius: 20px;
+  border: 10px solid #94CDD3;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contact > div {
   margin: auto;
-  padding: 20px 20px 50px 20px;
+  position: relative;
+}
+.contact > div .contact-left,
+.contact > div .contact-right {
+  border-radius: 5px;
+  background-color: #F3F2DA;
+  margin: auto;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.contact-left {
+  padding: 50px 50px 100px 50px;
+}
+.contact-left h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2B665B;
+}
+.contact-left button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #F2B07B;
+  border: none;
+}
+.contact-left button a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-left button:hover {
+  color: #F3F2DA;
+  background-color: #94CDD3;
+}
+.contact-left span {
+  display: none;
+}
+
+.contact-right {
+  padding: 50px 0;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+form input,
+form textarea,
+form button {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #719F96;
+  background-color: #F3F2DA;
+  padding: 10px;
+  color: gray;
+}
+
+@media only screen and (max-width: 760px) {
+  .contact {
+    width: 90%;
+  }
+  .contact > div {
+    margin: auto;
+    position: relative;
+  }
+  .contact > div .contact-left,
+  .contact > div .contact-right {
+    width: 100%;
+  }
+  .contact-left {
+    padding: 50px;
+  }
+  .contact-right {
+    padding-top: 0;
+  }
+}
+#footer {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #719F96;
 }
 
 @media only screen and (max-width: 992px) {
-  #skillHead, #traitHead,
-  #expHead, #workHead,
-  #contactHead {
+  #skillHead,
+  #traitHead,
+  #expHead,
+  #workHead {
     font-size: 22px;
     font-weight: 600;
     text-align: center;
@@ -12104,9 +12226,21 @@ body > div {
     margin-right: auto;
   }
 }
+@media only screen and (max-width: 992px) and (max-width: 992px) {
+  #contactHead {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+  }
+}
 @media only screen and (max-width: 450px) {
-  #skillHead, #traitHead,
-  #expHead, #workHead,
+  #skillHead,
+  #traitHead,
+  #expHead,
+  #workHead,
   #contactHead {
     font-size: 22px;
     font-weight: 600;

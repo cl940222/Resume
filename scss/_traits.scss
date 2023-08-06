@@ -39,24 +39,28 @@
     }
     &:nth-of-type(2) {
         background-image: url(../media/traits_001.png);
+        background-color: $body-color;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
     }
     &:nth-of-type(4) {
         background-image: url(../media/traits_002.png);
+        background-color: $body-color;
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 150%;
     }
     &:nth-of-type(5) {
         background-image: url(../media/traits_003.png);
+        background-color: $body-color;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 150%;
     }
     &:nth-of-type(7) {
         background-image: url(../media/traits_004.png);
+        background-color: $body-color;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 180%;
