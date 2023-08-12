@@ -11584,7 +11584,7 @@ body > div {
 }
 .sidebar {
   height: 100%;
-  width: 0;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -11622,6 +11622,10 @@ body > div {
   padding: 10px 15px;
   border: none;
   border-radius: 50px;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 0;
 }
 .openbtn:hover {
   background-color: #F2B07B;
