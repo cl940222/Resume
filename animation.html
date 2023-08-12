@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        #sec1 {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(250, 255, 250);
+        }
+
+        #tree {
+            background-image: url(/123.png);
+            height: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+
+        #box {
+            height: 30%;
+            width: 150px;
+            background-image: url(/2688573.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* border: 1px solid black; */
+            position: absolute;
+            bottom: 0px;
+            animation-name: slideLeft;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        #apple {
+            height: 10%;
+            width: 100px;
+            background-image: url(/apple.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 100px;
+            right: 310px;
+            animation-name: drop;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                transform: translateX(500px);
+            }
+
+            100% {
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(490px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sec1">
+        <div id="tree">
+            <div id="apple"></div>
+            <div id="box" class=""></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
