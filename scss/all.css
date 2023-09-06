@@ -11801,8 +11801,8 @@ body > div {
 
 .traitCard {
   height: 320px;
-  text-align: center;
-  padding: 50px 10px 20px 10px;
+  text-align: left;
+  padding: 50px;
 }
 .traitCard:nth-of-type(1) {
   background-color: #F3F2DA;
@@ -11828,24 +11828,23 @@ body > div {
   background-color: #E3E2DE;
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 160%;
 }
 .traitCard:nth-of-type(5) {
   background-image: url(../media/traits_003.png);
   background-color: #E3E2DE;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 160%;
 }
 .traitCard:nth-of-type(7) {
   background-image: url(../media/traits_004.png);
   background-color: #E3E2DE;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 180%;
+  background-size: 190%;
 }
 .traitCard span {
-  border-bottom: 5px solid #2B665B;
   font-size: 30px;
   color: #2B665B;
   font-weight: 600;

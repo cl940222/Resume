@@ -19,8 +19,8 @@
 .traitCard {
     // width: 326px;
     height: 320px;
-    text-align: center;
-    padding: 50px 10px 20px 10px;
+    text-align: left;
+    padding: 50px;
 
     &:nth-of-type(1) {
         background-color: $div-background-creme;
@@ -49,24 +49,23 @@
         background-color: $body-color;
         background-position: right center;
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: 160%;
     }
     &:nth-of-type(5) {
         background-image: url(../media/traits_003.png);
         background-color: $body-color;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 150%;
+        background-size: 160%;
     }
     &:nth-of-type(7) {
         background-image: url(../media/traits_004.png);
         background-color: $body-color;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 180%;
+        background-size: 190%;
     }
     span {
-        border-bottom: 5px solid $text-header;  
         // margin: 50px auto 10px auto;    
         font-size: 30px;
         color: $text-header;
