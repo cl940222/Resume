@@ -1,4 +1,4 @@
-#workHead,#toResume  {
+#workHead  {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -11,6 +11,13 @@
     display: block;
     border: none;
     text-decoration: none;
+}
+
+#toResume {
+    display: block;
+    margin: auto;
+    text-align: center;
+    transition: all 1s;
 }
 
 #secWork {

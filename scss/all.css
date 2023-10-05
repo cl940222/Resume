@@ -11453,6 +11453,7 @@ body {
   background-color: #E3E2DE;
   width: 100%;
   font-family: "Raleway";
+  transition: all 1s;
 }
 
 #myBtn {
@@ -11955,7 +11956,7 @@ body > div {
     font-size: 16px;
   }
 }
-#workHead, #toResume {
+#workHead {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -11969,6 +11970,13 @@ body > div {
   display: block;
   border: none;
   text-decoration: none;
+}
+
+#toResume {
+  display: block;
+  margin: auto;
+  text-align: center;
+  transition: all 1s;
 }
 
 #secWork {
