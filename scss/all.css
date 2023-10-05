@@ -11541,10 +11541,10 @@ body > div {
     margin-left: 10px;
   }
   .main .main-left div h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .main .main-left div span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 630px) {
@@ -11552,13 +11552,13 @@ body > div {
     padding: 160px 20px 0 20px;
   }
   .main .main-left div p {
-    font-size: 22px;
+    font-size: 20px;
   }
   .main .main-left div h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .main .main-left div span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -11576,7 +11576,7 @@ body > div {
     margin: auto;
   }
   .main .main-left div p {
-    font-size: 22px;
+    font-size: 20px;
   }
   .main .main-right div {
     margin: auto;
@@ -11584,7 +11584,7 @@ body > div {
 }
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -11625,7 +11625,7 @@ body > div {
   width: 50px;
   margin-top: 20px;
   margin-left: 20px;
-  z-index: 0;
+  z-index: 1;
 }
 .openbtn:hover {
   background-color: #F2B07B;
@@ -11974,6 +11974,33 @@ body > div {
 #secWork {
   margin: auto;
   padding: 20px 20px 50px 20px;
+}
+
+.cl-btn {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 3px solid #719F96;
+  background-color: #719F96;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #F3F2DA;
+  margin: 10px auto;
+  width: 40%;
+}
+
+.cl-btn:hover {
+  border-color: #719F96;
+  background-color: #F3F2DA;
+  color: #719F96;
+}
+
+.workCardFoot {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
 .workCard {

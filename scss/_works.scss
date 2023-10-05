@@ -19,6 +19,33 @@
     padding: 20px 20px 50px 20px;
 }
 
+.cl-btn{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 3px solid $div-background-green;
+    background-color: $div-background-green;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $div-background-creme;
+    margin: 10px auto;
+    width: 40%;
+}
+
+.cl-btn:hover{
+    border-color: $div-background-green;
+    background-color: $div-background-creme;
+    color: $div-background-green;
+}
+
+.workCardFoot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
 .workCard {
     margin: 10px auto;
     width: 30%;
