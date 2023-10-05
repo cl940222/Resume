@@ -21,6 +21,8 @@
     height: 320px;
     text-align: left;
     padding: 50px;
+    display: flex;
+    align-items: center;
 
     &:nth-of-type(1) {
         background-color: $div-background-creme;
@@ -37,6 +39,7 @@
     &:nth-of-type(8) {
         background-color: $div-background-blue;
     }
+
     &:nth-of-type(2) {
         background-image: url(../media/traits_001.png);
         background-color: $body-color;
@@ -44,6 +47,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
+
     &:nth-of-type(4) {
         background-image: url(../media/traits_002.png);
         background-color: $body-color;
@@ -51,6 +55,7 @@
         background-repeat: no-repeat;
         background-size: 160%;
     }
+
     &:nth-of-type(5) {
         background-image: url(../media/traits_003.png);
         background-color: $body-color;
@@ -58,6 +63,7 @@
         background-repeat: no-repeat;
         background-size: 160%;
     }
+
     &:nth-of-type(7) {
         background-image: url(../media/traits_004.png);
         background-color: $body-color;
@@ -65,12 +71,14 @@
         background-repeat: no-repeat;
         background-size: 190%;
     }
+
     span {
         // margin: 50px auto 10px auto;    
-        font-size: 30px;
+        font-size: 25px;
         color: $text-header;
         font-weight: 600;
     }
+
     p {
         margin: 20px;
         text-align: left;
@@ -96,28 +104,38 @@
     #secTraits {
         margin-top: 20px;
     }
-    
+
     .traitCard {
         // width: 326px;
         // height: 320px;
-    
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 20px;
+            text-align: center;
+        }
 
         &:nth-of-type(2) {
             background-position: center;
             background-size: 150%;
         }
+
         &:nth-of-type(4) {
             background-position: right bottom;
             background-size: 240%;
         }
+
         &:nth-of-type(5) {
             background-position: left;
             background-size: 250%;
         }
+
         &:nth-of-type(7) {
             background-position: center;
             background-size: 300%;
         }
     }
- 
+
 }

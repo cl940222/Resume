@@ -11666,7 +11666,6 @@ body > div {
 .skillCard {
   display: inline-block;
   width: 400px;
-  height: 300px;
   margin: 0px 10px 10px 20px;
   padding: 20px;
   border-radius: 10px;
@@ -11715,7 +11714,6 @@ body > div {
   .skillCard {
     display: inline-block;
     width: 400px;
-    height: 300px;
     margin: auto auto 50px auto;
     padding: 20px;
     border-radius: 10px;
@@ -11803,6 +11801,8 @@ body > div {
   height: 320px;
   text-align: left;
   padding: 50px;
+  display: flex;
+  align-items: center;
 }
 .traitCard:nth-of-type(1) {
   background-color: #F3F2DA;
@@ -11845,7 +11845,7 @@ body > div {
   background-size: 190%;
 }
 .traitCard span {
-  font-size: 30px;
+  font-size: 25px;
   color: #2B665B;
   font-weight: 600;
 }
@@ -11861,6 +11861,15 @@ body > div {
 @media only screen and (max-width: 576px) {
   #secTraits {
     margin-top: 20px;
+  }
+  .traitCard {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .traitCard span {
+    font-size: 20px;
+    text-align: center;
   }
   .traitCard:nth-of-type(2) {
     background-position: center;
@@ -11946,7 +11955,7 @@ body > div {
     font-size: 16px;
   }
 }
-#workHead {
+#workHead, #toResume {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -11957,6 +11966,9 @@ body > div {
   width: fit-content;
   padding: 10px 100px;
   margin: 20px auto 50px auto;
+  display: block;
+  border: none;
+  text-decoration: none;
 }
 
 #secWork {
@@ -11967,6 +11979,7 @@ body > div {
 .workCard {
   margin: 10px auto;
   width: 30%;
+  padding: 10px;
 }
 .workCard h4 {
   font-size: 22px;
@@ -11983,27 +11996,8 @@ body > div {
   padding: 10px 10px 0px 10px;
 }
 
-#tools {
-  height: 100px;
-  border-radius: 10px;
-}
-#tools div {
-  width: 70px;
-  height: 70px;
-  display: inline-block;
-  margin: 10px;
-}
-#tools div:nth-child(1) {
-  background-image: url(../media/logo.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#tools div:nth-child(2) {
-  background-image: url(../media/bootstrap.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+.workImg:hover {
+  opacity: 50%;
 }
 
 .workCard:nth-of-type(1) {
@@ -12012,13 +12006,57 @@ body > div {
   text-align: center;
 }
 .workCard:nth-of-type(1) .workImg {
-  background-image: url(../media/work_001.png);
+  display: block;
+  margin: 15px auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+.workCard:nth-of-type(1) #tools {
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.workCard:nth-of-type(1) #tools div {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(1) {
+  background-image: url(../media/html.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
-  margin: 15px auto;
-  height: 250px;
-  border-radius: 5px;
+  background-position: center;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(2) {
+  background-image: url(../media/css.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(3) {
+  background-image: url(../media/js.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(4) {
+  background-image: url(../media/logo.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(5) {
+  background-image: url(../media/bootstrap.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-of-type(1) #tools div:nth-child(6) {
+  background-image: url(../media/jquery.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .workCard:nth-child(2) {
@@ -12027,28 +12065,119 @@ body > div {
   text-align: center;
 }
 .workCard:nth-child(2) .workImg {
-  background-image: url(../media/work_002.png);
+  display: block;
+  margin: 15px auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+.workCard:nth-child(2) h4 {
+  border-bottom: 3px dashed #719F96;
+}
+.workCard:nth-child(2) #tools {
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.workCard:nth-child(2) #tools div {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+.workCard:nth-child(2) #tools div:nth-child(1) {
+  background-image: url(../media/html.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
-  margin: 15px auto;
-  height: 250px;
-  border-radius: 5px;
+  background-position: center;
+}
+.workCard:nth-child(2) #tools div:nth-child(2) {
+  background-image: url(../media/css.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(2) #tools div:nth-child(3) {
+  background-image: url(../media/js.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .workCard:nth-child(3) {
-  background-color: #F2B07B;
+  background-color: #F3F2DA;
   border-radius: 10px;
   text-align: center;
 }
 .workCard:nth-child(3) .workImg {
-  background-image: url(../media/work_002.png);
+  display: block;
+  margin: 15px auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+.workCard:nth-child(3) #tools {
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.workCard:nth-child(3) #tools div {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+.workCard:nth-child(3) #tools div:nth-child(1) {
+  background-image: url(../media/html.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center top;
-  margin: 15px auto;
-  height: 250px;
-  border-radius: 5px;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(2) {
+  background-image: url(../media/css.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(3) {
+  background-image: url(../media/js.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(4) {
+  background-image: url(../media/bootstrap.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(5) {
+  background-image: url(../media/jquery.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(6) {
+  background-image: url(../media/nodejs.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(7) {
+  background-image: url(../media/mysql.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(8) {
+  background-image: url(../media/git.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.workCard:nth-child(3) #tools div:nth-child(9) {
+  background-image: url(../media/github.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -12056,17 +12185,11 @@ body > div {
     margin: 40px;
     width: 40%;
   }
-  .workImg {
-    height: 450px;
-  }
 }
 @media only screen and (max-width: 992px) {
   .workCard {
     margin: 40px;
     width: 40%;
-  }
-  .workImg {
-    height: 450px;
   }
 }
 @media only screen and (max-width: 836px) {
@@ -12074,26 +12197,17 @@ body > div {
     margin: 10px auto;
     width: 40%;
   }
-  .workImg {
-    height: 450px;
-  }
 }
 @media only screen and (max-width: 770px) {
   .workCard {
     margin: 20px auto;
     width: 70%;
   }
-  .workImg {
-    height: 450px;
-  }
 }
 @media only screen and (max-width: 650px) {
   .workCard {
     margin: 20px auto;
     width: 80%;
-  }
-  .workImg {
-    height: 450px;
   }
 }
 @media only screen and (max-width: 530px) {

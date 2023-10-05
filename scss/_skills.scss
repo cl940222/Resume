@@ -30,7 +30,8 @@
 .skillCard {
     display: inline-block;
     width: 400px;
-    height: 300px;
+    // max-height: fit-content;
+    // height: 1000px;
     margin: 00px 10px 10px 20px;
     padding: 20px;
     border-radius: 10px;
@@ -94,7 +95,7 @@
     .skillCard {
         display: inline-block;
         width: 400px;
-        height: 300px;
+        // height: 300px;
         margin: auto auto 50px auto;
         padding: 20px;
         border-radius: 10px;
