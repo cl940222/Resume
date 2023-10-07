@@ -176,15 +176,17 @@
 
     .skillCard {
         margin: auto auto 20px auto;
+        ul {
+    
+            li {
+                font-size: 20px;
+            }
+        }
     }
 
     #secSkills {
         margin-bottom: 20px;
     }
 
-    #skillText {
-        li{
-            font-size: 20px;
-        }
-    }
+    
 }

@@ -11776,11 +11776,11 @@ body > div {
   .skillCard {
     margin: auto auto 20px auto;
   }
+  .skillCard ul li {
+    font-size: 20px;
+  }
   #secSkills {
     margin-bottom: 20px;
-  }
-  #skillText li {
-    font-size: 20px;
   }
 }
 #traitHead {
