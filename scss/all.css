@@ -11779,6 +11779,9 @@ body > div {
   #secSkills {
     margin-bottom: 20px;
   }
+  #skillText li {
+    font-size: 20px;
+  }
 }
 #traitHead {
   font-size: 30px;
@@ -11954,6 +11957,9 @@ body > div {
   }
   #secExp #expCards div h4, #secExp #expCards div h5 {
     font-size: 16px;
+  }
+  #secExp #expCards li {
+    font-size: 20px;
   }
 }
 #workHead {
